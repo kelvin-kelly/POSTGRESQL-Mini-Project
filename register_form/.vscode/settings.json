@@ -1,0 +1,26 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "aws-0-eu-central-1.pooler.supabase.com",
+      "port": 6543,
+      "driver": "PostgreSQL",
+      "name": "first_flask",
+      "username": "postgres.cynszwbrcrbbpjsxzssm",
+      "password": "SUPABBASEsupabase",
+      "database": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "aws-0-eu-central-1.pooler.supabase.com",
+      "port": 6543,
+      "driver": "PostgreSQL",
+      "name": "reg",
+      "database": "postgres",
+      "username": "postgres.yidrwyfuuibnutiiocge",
+      "password": "SUPABASEsupabase"
+    }
+  ],
+  "cSpell.enableFiletypes": ["powershell", "sql"],
+  "cSpell.words": ["Esupabase", "jsonify", "sqlalchemy", "supa", "SUPABBAS"]
+}
