@@ -7,6 +7,8 @@ name = "pypi"
 psycopg2-binary = "*"
 flask = "*"
 sqlalchemy = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
 
 [dev-packages]
 

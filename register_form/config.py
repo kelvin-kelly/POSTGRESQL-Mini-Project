@@ -1,4 +1,4 @@
-db_config={
+conf={
     'dbname':'postgres',
     'user':'postgres.yidrwyfuuibnutiiocge',
     'password':'SUPABASEsupabase',
@@ -6,5 +6,5 @@ db_config={
     'port':'6543'
 }
 
-app.config["SQLALCHEMY_DATABASE_URI"]=f"postgresql://{db_config['user']}:{db_config['password']}@{db_config['host']}:6543/postgres"
-
+class Config:
+    SQLALCHEMY_DATABASE_URI=f"postgresql://{conf['user']}:{conf['password']}@{conf['host']}:5432/postgres"

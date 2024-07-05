@@ -1,15 +1,19 @@
 
-supa_pass = ('SUPABBASEsupabase')
+# supa_pass = ('SUPABBASEsupabase')
 
 from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-
+from config import Config
+from flask_migrate import Migrate
 
 app = Flask(__name__)
+app.config.from_object(Config)
+migrate = Migrate()
 
 
+db = SQLAlchemy(app)
 
-db = SQLAlchemy()
+migrate.init_app(app,db)
 
 class Register(db.Model):
     __tablename__ = 'reg'
