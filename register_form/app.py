@@ -3,7 +3,7 @@ supa_pass = ('SUPABBASEsupabase')
 
 from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-from config import db_config
+
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 db = SQLAlchemy()
 
-class Register(db.model):
+class Register(db.Model):
     __tablename__ = 'reg'
     id = db.Column(db.Integer, primary_key = True)
     fname = db.Column(db.String(40))
